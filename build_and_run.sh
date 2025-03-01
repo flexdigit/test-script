@@ -27,6 +27,9 @@ build_and_run_project() {
 if [ "$1" == "clean" ]; then
     # Clean the project and then build/run
     clean_project
+elif [ "$1" == "rebuild" ]; then
+    # Clean the project and then build/run
+    clean_project
     build_and_run_project
 else
     # Build and run without cleaning
