@@ -7,7 +7,7 @@ find_package(Python3 REQUIRED)
 # Add a custom target to run the Python script
 add_custom_target(
     run_script
-    COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/print_file.py ${CMAKE_SOURCE_DIR}/file_to_print.txt
+    COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/print_file.py ${CMAKE_SOURCE_DIR}/file_to_print-1.txt ${CMAKE_SOURCE_DIR}/file_to_print-2.txt
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     COMMENT "Running Python script to print file contents"
 )
